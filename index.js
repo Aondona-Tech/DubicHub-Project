@@ -1,0 +1,1 @@
+const navLinks = document.getElementById('navLinks') 
