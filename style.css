@@ -42,7 +42,7 @@ body {
 
 /*----- Header Section ------*/
 
-.header {
+header {
    min-height: 100vh;
    width: 100%;
    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.8)), url(./Banner.jpeg);
@@ -52,7 +52,7 @@ body {
    margin: auto;
 }
 
-.header img{
+header img{
     width: 100px;
     height: 100px;
 }
@@ -123,7 +123,7 @@ nav{
     top: 40%;
     left: 20%;
     transform: translate(-10%,-10%);
-    text-align: justify;
+    text-align: left;
 }
 
 .hero h1 {
@@ -197,7 +197,7 @@ main {
     width: 80%;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     justify-self: center;
     margin-bottom: 50px;
 }
@@ -245,6 +245,10 @@ main {
     border: none;
     background: var(--bg-primary);
     justify-content: center;
+}
+
+.add-to-cart i {
+    font-size: 18px;
 }
 
 
@@ -362,6 +366,25 @@ main {
     font-weight: var(--font-weight-primary);
 }
 
+.review-btn {
+    width: 100%;
+    text-align: center;
+}
+
+.reviews-btn {
+    justify-content: center;
+    padding: 1.2% 3%;
+    background: transparent;
+    border: 2.5px solid var(--white);
+}
+
+.reviews-btn a{
+    color: var(--white);
+    font-family: var(--font-primary);
+    font-size: 18px;
+    text-decoration: none;
+}
+
 
 
 
@@ -388,7 +411,7 @@ main {
     top: 90%;
     left: 20%;
     transform: translate(-10%,-10%);
-    text-align: justify;
+    text-align: left;
 }
 
 .info-display h1 {
@@ -411,7 +434,9 @@ main {
 
 
 /*------ footer ------*/
-
+footer {
+    
+}
 
 
 
