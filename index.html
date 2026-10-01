@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dubic Hub | Home Page</title>
     <link rel="stylesheet" href="style.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.google.com/faq?preview.script=Latn#can-i-use-the-font-in-a-logo">
@@ -28,7 +29,7 @@
           <li><a href="#">Reservations</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="#">Account</a></li>
-          <button class="nav-btn"><a href="order.html">Order</a></button>
+          <a class="nav-btn" href="order.html">Order</a>
         </ul>
       </div>
       </nav> 
@@ -39,8 +40,8 @@
           <p>Experience Exclusive Dining and Authentic <br> Cusines </p>
         </div>
         <div class="hero-btn">
-          <button class="hero-menu-btn"><a href="menu.html">View Menu</a></button>
-          <button class="hero-reserve-btn"><a href="reservations.html">Reserve a Table</a></button>
+          <a class="hero-menu-btn" href="menu.html">View Menu</a>
+          <a class="hero-reserve-btn" href="reservations.html">Reserve a Table</a>
         </div>        
       </section>
     
@@ -51,7 +52,7 @@
     <section class="dishes">
       <h1>Our Signature Dishes</h1>
       <section class="dishes-display">
-
+       
         <div class="dish-display">
           <img src="./Jollof Rice Supreme.jpeg" alt="Jollof Rice Supreme">
           <h3>Jollof Rice Supreme</h3>
@@ -66,7 +67,7 @@
 
           <div class="dish-info">
           <p>$4.00</p>
-          <button class="add-to-cart"><i class="fa fa-plus" aria-hidden="true"></i></button>
+         <button class="add-to-cart" id="cart-icon"><i class="fa fa-plus" onclick="changeIcon(this)"></i></button>
           </div>
         </div>
 
@@ -84,7 +85,7 @@
 
           <div class="dish-info">
           <p>$6.00</p>
-          <button class="add-to-cart"><i class="fa fa-plus" aria-hidden="true"></i></button>
+          <button class="add-to-cart" id="cart-icon"><i class="fa fa-plus" onclick="changeIcon(this)"></i></button>
           </div>
         </div>
 
@@ -102,21 +103,29 @@
           
           <div class="dish-info">
           <p>$2.50</p>
-          <button class="add-to-cart" id="cart-icon"><i class="fa fa-plus" aria-hidden="true"></i></button>
+          <button class="add-to-cart" id="cart-icon"><i class="fa fa-plus" onclick="changeIcon(this)"></i></button>
           </div>
-        </div>
+        </div> 
 
       </section>
+
+      <div class="cart-section">
+          <div class="cart">
+            <p id="cart-num"></p>
+            <i class="fa fa-cart-plu" aria-hidden="true"></i>
+          </div>
+      </div>
+
     </section>
 
     <section class="reservation">
       <section class="reservation-display">
         <div class="reserve-info">
-           <h1>Experience The <span id="Hub">Hub</span> <br>  Like Never Before</h1>  <br>
+           <h2>Experience The <span id="Hub-footer">Hub</span> <br>  Like Never Before</h1>  <br>
            <button class="reserve-btn" ><a href="#">Make a Reservation</a></button>
         </div>
         <div class="reserve-img">
-          <img src="./Shogun Experience.jpeg" >
+          <img src="Shogun Experience.jpeg" alt="">
         </div>
       </section>
     </section>
@@ -144,7 +153,7 @@
          </div>
 
          <div class="review-btn">
-          <button class="reviews-btn"><a href="reviews.html">Leave a review</a></button>
+           <a class="reviews-btn" href="reviews.html">Leave a review</a>
          </div>
       </section>
     </section>
@@ -159,11 +168,52 @@
     </section>
     
    </main>
+   
+
+
+  <!--- footer section --->
 
    <footer>
 
       <section class="main-footer">
-        
+
+        <section class="info-footer">
+
+          <div class="brand">
+            <h2>Dubic <span id="Hub-footer">Hub</span></h2>
+            <p>Nigerian Soul, International table</p>
+          </div>
+          <div class="footer-sub-nav">
+            <h2>Explore</h2>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Reservations</a></li>
+              <li><a href="#">Reviews</a></li>
+            </ul>
+          </div> 
+        <div class="contact">
+          <h2>Contact Us</h2>
+          <div class="contactp">
+          <p>Lagos, Nigeria</p>
+          <p>+234 800 223 3555</p>
+          <p>hello@dubichub@gmail.com</p>
+        </div>
+        </div> 
+        <div class="follow">
+          <h2>Follow Us</h2>
+          <div class="follow-logo">
+          <img src="./instagram.jpeg" alt="" width="32px" height="30px">
+          <img src="./facebook.jpeg" alt="" width="32px" height="30px">
+          <img src="./X.png" alt="" width="32px" height="30px">
+          </div>
+        </div>
+
+        </section>
+
+        <section class="conclude-footer">
+           <h1><em>&copy; Dubic <span id="Hub-footer">Hub</span></em></h1>
+        </section>
       </section>
 
    </footer>

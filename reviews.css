@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap');
 
 :root {
-
 	--bg-primary: #ffdc00;
 	--line: rgba(245, 240, 232, .18);
 }
@@ -16,9 +15,35 @@ html {
 	scroll-behavior: smooth;
 }
 
+
+
+.home-button {
+	background: #120f0e;
+	border: 1px solid var(--bg-primary);
+	color: white;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 700;
+	margin: 28px 0 0;
+	padding: 12px 18px;
+}
+
+.home-button span {
+	color: var(--bg-primary);
+	font-size: 18px;
+	margin-right: 10px;
+}
+
+.home-button:hover {
+	background: var(--bg-primary);
+	color: #120f0e;
+}
+
+.home-button:hover span {
+	color: #120f0e;
+}
+
 body {
-	background: var(--ink);
-	color: var(--paper);
 	font-family: 'DM Sans', sans-serif;
 	line-height: 1.5;
 }
@@ -43,6 +68,11 @@ body {
 .share-intro > p:last-child {
 	color: #74695d;
 	max-width: 310px;
+}
+
+.eyebrow {
+    color: #2B221B;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
 }
 
 form {
@@ -101,6 +131,32 @@ button span {
 	margin-top: 15px;
 }
 
+@media (max-width: 760px) {
+	.share-section {
+		gap: 45px;
+		grid-template-columns: 1fr;
+		padding: 55px 7vw;
+	}
+
+	.share-section h2 {
+		font-size: clamp(2.5rem, 12vw, 3.5rem);
+	}
+
+	.share-intro > p:last-child {
+		max-width: 100%;
+	}
+
+	input,
+	select,
+	textarea {
+		width: 100%;
+	}
+
+	button {
+		max-width: 100%;
+	}
+}
+
 
 /* Mobile layout */
 @media (max-width: 760px) {
@@ -142,6 +198,10 @@ button span {
 
 	.share-section {
 		gap: 45px;
+	}
+
+	.home-button {
+		margin: 18px 0 0;
 	}
 
 	/* Footer */
